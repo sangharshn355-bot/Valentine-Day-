@@ -4,11 +4,11 @@ const questionText = document.getElementById('questionText');
 const mainGif = document.getElementById('mainGif');
 
 const noMessages = [
-    "Think again!",
+    "Think again!😏",
     "Are you sure? 😡",
     "See this... 😭",
-    "You're breaking my heart!",
-    "Please? ❤️"
+    "You're breaking my heart !💔",
+    "Please? 🥺❤️"
 ];
 
 /* ✅ LOCAL GIFS – FIXED */
@@ -136,7 +136,6 @@ const quizData = [
     { q: "Where do I plan to spend the rest of my life? ❤️", options: ["Dhule", "In Your Heart", "Nashik"], correct: 1 },
     { q: "Who is more 'Chidkuu' in our relationship ? 😤 😒", options: ["Always You", "No One", "Me"], correct: 2 },
     { q: "Who gets jealous so easily ? 🤨", options: ["Always You", "No One", "Me"], correct: 2 },
-    { q: "What factor always shock us that helps our relation 🤯?", options: ["imagination", "Timing ⏰", "Same caste"], correct: 1 },
     { q: "Who has the lower IQ 😂🧠?", options: ["You", "No One", "Obviously Me(Yedi Sanviii..😂)"], correct: 2 },
     {
         q: "Who is the most Smartest, Sweetest, Cutest, person u ever met ?😁😎",
@@ -220,3 +219,4 @@ document.head.appendChild(styleSheet);
 
 /* Init */
 document.addEventListener('DOMContentLoaded', createFloatingHearts);
+
