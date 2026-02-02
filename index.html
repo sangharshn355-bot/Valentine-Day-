@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Forever ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    
+    <div class="container">
+
+        <!-- PAGE 1 -->
+        <div id="page1" class="card active">
+            <img src="picture/be_mine.gif" id="mainGif" class="main-gif">
+
+            <h1 id="questionText">Will you be mine 🥺?</h1>
+            <p class="subtitle">
+                Life is an incredible journey, and I want to spend every single second of it with you.
+            </p>
+
+            <div class="btn-group">
+                <button id="yesBtn" onclick="nextPage(2)">YES</button>
+                <button id="noBtn">NO</button>
+            </div>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div id="page2" class="card">
+            <img src="picture/valentine.gif" class="main-gif">
+            <h1>Happy Valentine Day Baby! 💍</h1>
+            <p class="subtitle">
+                Every second with you is a celebration. You are the spark that makes my world brighter!
+            </p>
+            <button class="action-btn" onclick="nextPage(3)">SEE MY GIFTS →</button>
+        </div>
+
+        <!-- PAGE 3 -->
+        <div id="page3" class="card box-horizontal">
+            <h1>Something for You</h1>
+
+            <div class="gift-grid">
+                <div class="gift-box" onclick="showSection('quiz-section')">
+                    <img src="picture/gift1.gif">
+                    <p>Gift 1</p>
+                </div>
+
+                <div class="gift-box" onclick="showSection('letter-section')">
+                    <img src="picture/gift2.gif">
+                    <p>Gift 2</p>
+                </div>
+
+                <div class="gift-box" onclick="showSection('gallery-section')">
+                    <img src="picture/gift3.gif">
+                    <p>Gift 3</p>
+                </div>
+            </div>
+
+            <button id="finallyBtn" class="finally-btn" onclick="showFinalPage()" style="display:none;">
+                ✨ FINALLY ✨
+            </button>
+        </div>
+
+        <!-- QUIZ -->
+        <div id="quiz-section" class="card box-horizontal">
+            <h1 id="quizTitle">Quiz for you 😚</h1>
+            <div id="quiz-content">
+                <p class="quiz-q" id="currentQuestion"></p>
+                <div id="quizOptions"></div>
+            </div>
+            <button class="back-btn" onclick="backToGifts()">← BACK</button>
+        </div>
+
+        <!-- LETTER -->
+        <div id="letter-section" class="card box-horizontal">
+            <h1>A Letter For You 🥺</h1>
+            <div class="letter-paper">
+                <p>My Baby,</p>
+                <p>
+                    Thank you for being my person. I want to hold your hand through every season of life.
+                    You are my home, you are my everything, and I love you so much.
+                </p>
+                <p>Happy Valentine's Day! ❤️</p>
+            </div>
+            <button class="back-btn" onclick="backToGifts()">← BACK</button>
+        </div>
+
+        <!-- GALLERY -->
+        <div id="gallery-section" class="card box-gallery">
+            <h1>Look at this cutie 😭</h1>
+            <div class="gallery-grid">
+                <div class="polaroid"><img src="picture/img1.jpeg"><p>💕 Love Birds 💕</p></div>
+                <div class="polaroid"><img src="picture/img2.jpeg"><p>The Pinkey Promise 🤞🏻</p></div>
+                <div class="polaroid"><img src="picture/img3.jpeg"><p>🫶 Perfect Date 🫶</p></div>
+                <div class="polaroid"><img src="picture/img4.jpeg"><p>💖 Only Usss 🥰</p></div>
+                <div class="polaroid"><img src="picture/img5.jpeg"><p>Two Monkeys 🤣🤣</p></div>
+                <div class="polaroid"><img src="picture/img6.jpeg"><p>True Care 🧿🥺</p></div>
+            </div>
+            <button class="back-btn" onclick="backToGifts()">← BACK</button>
+        </div>
+
+        <!-- FINAL PAGE -->
+        <div id="final-page" class="final-container">
+            <div class="pink-overlay"></div>
+            <div class="final-content">
+                <h1 class="final-title">You Are My Forever ❤️</h1>
+
+                <div class="final-image-container">
+                    <img src="picture/uss.jpeg" class="final-image">
+                </div>
+
+                <div class="final-message">
+                    <p>
+                        In a world full of temporary things, you are my forever.
+                        Every heartbeat, every breath, every moment — they all belong to you.
+                    </p>
+                    <p class="signature">Forever yours, "CuppyCakee" ❤️</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
