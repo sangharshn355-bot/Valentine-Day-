@@ -220,3 +220,4 @@ document.head.appendChild(styleSheet);
 /* Init */
 document.addEventListener('DOMContentLoaded', createFloatingHearts);
 
+
